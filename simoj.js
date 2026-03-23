@@ -33,7 +33,7 @@ let level = 0;
 let h2 = document.querySelector("h2");
 console.log("hello");
 
-document.addEventListener("click", function () {
+document.addEventListener("keypress", function () {
 
     if (started == false) {
         console.log("game started");
@@ -86,7 +86,7 @@ function checkAns(idx) {
         if (userSeq.length == gameSeq.length) {
             setTimeout(levelup(), 1000);
         }
-    }  else {
+    } else {
         h2.innerHTML = `Game over! and your score is <b>${level}</b> To Restart the game press any key`;
         reset();
         let imgrt = document.querySelector('img');
@@ -101,8 +101,7 @@ function checkAns(idx) {
         }, 80);
 
 
-    };
-}
+    }
 }
 function buttonpress() {
     console.log("button is pressed");
