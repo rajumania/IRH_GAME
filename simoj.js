@@ -99,7 +99,7 @@ function checkAns(idx) {
 
     setTimeout(() => {
         reset();
-    }, 500);
+    }, 5000);
 }
 }
 function buttonpress() {
