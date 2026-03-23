@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+
+}
+
+.imageLose {
+
+    background-image: url(https://media1.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif?cid=ecf05e47h8j9n7y2m9s0v5c8zq4l7b5a9d8c9a1b2c3d&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.btn {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    border: 2px solid black;
+    margin: 6px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    background-color: rgb(140, 122, 174);
+}
+
+.blue {
+    background-color: rgb(95, 139, 137);
+}
+
+.pink {
+    background-color: rgb(32, 34, 65);
+}
+
+.yellow {
+    background-color: rgba(115, 255, 0, 0.115);
+}
+
+.flash {
+    background-color: white;
+}
+
+.usercolor {
+    background-color: green;
+}
