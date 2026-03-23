@@ -87,21 +87,20 @@ function checkAns(idx) {
             setTimeout(levelup(), 1000);
         }
     } else {
-        h2.innerHTML = `Game over! and your score is <b>${level}</b> To Restart the game press any key`;
+    console.log("GAME OVER");
+
+    h2.innerHTML = `Game over! and your score is <b>${level}</b> Press any key`;
+
+    document.body.classList.add("imageLose");
+
+    setTimeout(() => {
+        document.body.classList.remove("imageLose");
+    }, 3000);
+
+    setTimeout(() => {
         reset();
-        let imgrt = document.querySelector('img');
-        imgrt.classList.add("imageLose");
-        setTimeout(function () {
-            imgrt.classList.remove("imageLose");
-        }, 3000);
-
-        document.querySelector("body").style.backgroundColor = "red";
-        setTimeout(function () {
-            document.querySelector("body").style.backgroundColor = "white";
-        }, 80);
-
-
-    }
+    }, 500);
+}
 }
 function buttonpress() {
     console.log("button is pressed");
