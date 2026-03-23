@@ -33,7 +33,8 @@ let level = 0;
 let h2 = document.querySelector("h2");
 console.log("hello");
 
-document.addEventListener("keypress", function () {
+document.addEventListener("click", function () {
+    
 
     if (started == false) {
         console.log("game started");
